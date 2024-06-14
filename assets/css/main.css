@@ -1,0 +1,164 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+.body{
+    margin: 0;
+    padding: 0;
+    /* font-family: Poppins; */
+    font-family: 'Poppins', sans-serif !important; 
+    overflow: hidden;
+}
+.background_image{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/bus1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh; 
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.heading{
+    color:#fff;
+}
+.heading h1{
+   font-size:4em;
+   margin-top: 2em;
+   font-weight: 700;
+   font-family: Poppins;
+    
+}
+.heading p{
+    font-size:24px;
+    margin-top: 2em;
+    font-weight:600;
+    top:-1em;  
+ }
+.nav{
+    z-index: 1000;
+    padding-top:3em;
+    display: flex;
+    justify-content: center;
+}
+.navbar{
+    /* background-color: #1f89e1; */
+    background-color: #fff ;
+    border-radius: 10px 10px !important;
+}
+.logo{
+    width: 200px;
+    height:50px;
+}
+.home{
+    padding-left:16em;
+}
+.about{
+    padding-left:2em;
+}
+.download{
+    padding-left:2em;
+}
+
+.contact{
+    padding-left:5em;
+}
+
+.call{
+    display:flex ;
+}
+
+.call-icon{
+    position: relative;
+    top:0em;
+   
+}
+
+.fa-phone{
+    background-color:  #1f89e1;
+    padding:8px 8px;
+    border-radius: 50% 50%;
+}
+
+.nav-link:hover{
+   color:#1f89e1!important;
+}
+
+.nav-link.active, .nav-link.active:hover{
+    color:#1f89e1 !important;
+}
+
+/* button */
+.custom-btn {
+    display: inline-block;
+    padding: 8px 100px; 
+    font-size: 1.2rem; 
+    color: #fff; 
+    background-color: #1f89e1; 
+    border: none; 
+    border-radius: 30px 30px; 
+    text-align: center; 
+    text-decoration: none; 
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+.custom-btn:hover {
+    background-color: #1f89e1; 
+    transform: scale(1.05);
+    color:#fff; 
+}
+
+.custom-btn:active, .custom-btn:focus {
+    background-color: #1f89e1; 
+    outline: none; 
+}
+
+.route{
+    width: 80%;
+    height: 30vh;
+    align-items: center;
+    position: relative;
+    background-color: #fff;
+    left:10%;
+    z-index:100;
+    top:-8em;
+    padding: 2em 2em;
+    border-radius: 10px 10px !important;
+}
+
+select.form-control {
+    -webkit-appearance: menulist;
+    -moz-appearance: menulist;
+    appearance: menulist;
+  }
+
+  /* bus-operator */
+.bus-operator{
+    background-color: #1f89e1;
+    margin: 0;
+    position: relative;
+    top:-17em;
+    width: 100%;
+    height:50vh;
+    color:#fff;
+}
+
+.rowSpacing{
+    padding-top:2em;
+}
+
+.searchBuses{
+    padding-top: 2em;  
+}
+
+.bus-operator h3{
+    position:relative;
+    top:7em;
+    left:5.3em;
+}
+
