@@ -155,7 +155,7 @@
     background-color: #fff;
     left:10%;
     z-index:100;
-    top:52.0em;
+    top:53.5em;
     padding: 2em 2em;
     border-radius: 10px 10px !important;
 }
@@ -224,6 +224,7 @@ select.form-control {
 .fa-car{
  font-size:24px;  
  color: #1E88E1;
+ padding-top:3px;
  
 }
 .operatorspace i,p{
@@ -280,3 +281,400 @@ select.form-control {
     margin-left: 6em;
 
   }
+  .cards{
+    position: absolute;
+    top:95em;
+    left:8.4em  
+  }
+  .card-body{
+      margin-top:3em;
+  }
+
+  .card-body h2{
+    color: #494141;
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+  }
+  .card-body p{
+    color: #494141;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    margin-top: 0.5em;
+  }
+  .get_our_app{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/getapp.jpeg');
+    background-size: cover;
+    background-position: cover;
+    background-repeat: no-repeat;
+    height:65vh; 
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  .get_app{
+    color:#fff; 
+  
+  }
+
+  .getapptitle{
+    padding-top: 4em;
+    position:relative;
+    margin-left: 16em;
+    font-family: "Work Sans";
+  }
+  .getapptitle1{
+    position:relative;
+    margin-left: 15.7em;
+    font-family: "Work Sans";
+  }
+.get_app_description{
+    margin-left: 14.2em;
+    font-family: "Work Sans";
+    width:30%;
+    position: absolute;
+    left:30.7em;
+    text-align: left;
+    margin-top:0.8em;
+    font-size: 20px;
+   
+  }
+
+  .appstore {
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 10px 10px;
+    border:1px solid #000;
+    margin-left:-3.2em;
+}
+
+.appstore img {
+    display: block;
+    width: 150px;  /* Adjust the width as needed */
+    height: auto;  /* Maintain the aspect ratio */
+   
+}
+
+.appstore:focus {
+    outline: none;
+}
+
+.appstore:hover img {
+    opacity: 0.8;  /* Optional: change opacity on hover */
+}
+.get_button{
+    margin-top:13em;
+    margin-left:40em;
+}
+
+.playstore {
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 10px 10px;
+    border:1px solid #000;
+    margin-left:0.7em;
+}
+
+.playstore img {
+    display: block;
+    width: 150px;  /* Adjust the width as needed */
+    height: auto;  /* Maintain the aspect ratio */
+   
+}
+
+.playstore:focus {
+    outline: none;
+}
+
+.playstore:hover img {
+    opacity: 0.8;  /* Optional: change opacity on hover */
+}
+
+/* faq */
+.faq{
+    height:42vh;
+    background-color: #fff;
+}
+.accordion{
+    position:relative;
+    top:-1em;
+}
+/* Remove blue background color on focus */
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+    color: inherit;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: none;
+}
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+    color: inherit;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: none;
+}
+
+/* Add thicker black border-top to accordion body */
+.accordion-body {
+    border-top: 1px solid rgb(210, 206, 206); 
+    padding-top: 1rem; 
+}
+
+/* Style for the arrow */
+.accordion-button::after {
+    content: "\25BC"; 
+    font-size: 1.4rem;
+    float: right;
+    transition: transform 0.3s ease;
+}
+
+.accordion-button.collapsed::after {
+    
+    transform: rotate(180deg);
+
+}
+
+.accordion-button:not(.collapsed)::after {
+    transform: rotate(0deg); 
+}
+.faq1{
+    margin-top:2em;
+    color: #1E88E1;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Work Sans";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; 
+    letter-spacing: 0.4px;
+}
+.footer{
+    height:60vh;
+    background-color: #000;
+    color:#fff;
+}
+.footerdescription{
+   position:absolute;
+   width:25%;
+   left:9em;
+   margin-top:12em;
+   font-family: "Heebo";
+   font-style: normal;
+  
+}
+.footerdescription p{
+    font-family: "Heebo";
+    font-style: normal;
+   
+ }
+ .social-media{
+    display: flex;
+ }
+ .facebook{
+    background-color: #1E88E1;
+    width:40px;
+    height: 40px;
+    text-align:center;
+    border-radius: 5px 5px;
+    margin-right: 1em;
+ }
+ .fa-facebook{
+    margin-top:8px;
+ }
+ .twitter{
+    background-color: #1E88E1;
+    width:40px;
+    height: 40px;
+    text-align:center;
+    border-radius: 5px 5px;
+    margin-right: 1em;
+ }
+ .fa-twitter{
+    margin-top:8px;
+ }
+ .instagram{
+    background-color: #1E88E1;
+    width:40px;
+    height: 40px;
+    text-align:center;
+    border-radius: 5px 5px;
+    margin-right: 1em;
+ }
+ .fa-instagram{
+    margin-top:8px;
+ }
+ .youtube{
+    background-color: #1E88E1;
+    width:40px;
+    height: 40px;
+    text-align:center;
+    border-radius: 5px 5px;
+    margin-right: 1em;
+ }
+ .fa-youtube-play{
+    padding-top:8px;
+ }
+ .social{
+    color:#fff!important;
+ }
+
+ .links{
+    position:absolute;
+    left:38em;
+    margin-top:6em;
+    font-family: Barlow;
+ }
+ 
+ a {
+    text-decoration: none;
+    color:#fff;
+    margin-top:3px;
+ }
+ .link1{
+    display: flex;
+    color:#1E88E1;
+    background-color: none!important;
+ }
+ .link1 p{
+    font-size:30px;
+ }
+ .about{
+    padding-left:33px;
+ }
+ 
+ .link2{
+    display: flex;
+    color:#1E88E1;
+    background-color: none!important;
+    margin-top: -1em;
+ }
+ .link2 p{
+    font-size:30px;
+
+ }
+ .service{
+    padding-left:33px;
+ }
+ 
+ .link3{
+    display: flex;
+    color:#1E88E1;
+    background-color: none!important;
+    margin-top: -1em;
+ }
+ .link3 p{
+    font-size:30px;
+
+ }
+ .projects{
+    padding-left:33px;
+ }
+ 
+ .link4{
+    display: flex;
+    color:#1E88E1;
+    background-color: none!important;
+    margin-top: -1em;
+ }
+ .link4 p{
+    font-size:30px;
+
+ }
+ .pricing{
+    padding-left:33px;
+ }
+ .link5{
+    display: flex;
+    color:#1E88E1;
+    background-color: none!important;
+    margin-top: -1em;
+ }
+ .link5 p{
+    font-size:30px;
+
+ }
+ .contact{
+    padding-left:33px;
+ }
+ .links h3{
+    margin-bottom: 2.3em;
+    font-weight: 600
+ }
+ .contactinfo{
+    position:absolute;
+    left:52em;
+    margin-top:8em;
+    width: 40%!important;
+ }
+.address{
+    display:flex;
+    color:#fff;
+    width:60% !important;
+    padding-top:2.1em;
+   
+}
+.fa-map-marker{
+    color:#1E88E1;
+   
+}
+.address1{
+    position: absolute;
+    padding-left:3em;
+    border-bottom: 1px solid #CFCFCF;
+}
+.phone{
+    display:flex;
+    color:#fff;
+    width:60% !important;
+    padding-top:3.1em;
+
+}
+.fa-phone{
+    color:#1E88E1;
+}
+.phone1{
+    position: absolute;
+    padding-left:3em;
+    border-bottom: 1px solid #CFCFCF; 
+}
+.email{
+    display:flex;
+    color:#fff;
+    width:60% !important;
+    padding-top:3.1em;
+
+}
+.fa-envelope{
+    color:#1E88E1;
+}
+.email1{
+    position: absolute;
+    padding-left:3em;
+    border-bottom: 1px solid #CFCFCF; 
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: #fff;
+    margin-top: 20px;
+}
