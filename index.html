@@ -19,6 +19,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/animate.min.css" ></link>
+    
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 </head>
 <body>
@@ -26,7 +28,7 @@
         <div class="background_image">
         <!-- navbar -->
          <div class="nav">
-         <nav class="navbar navbar-expand-lg ">
+         <nav class="navbar navbar-expand-lg  wow fadeInUp">
             <div class="container">
               <a class="navbar-brand" href="#"><img  class="logo" src="./assets/images/logo.png"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,28 +46,41 @@
                     <a class="nav-link" href="#">Download Ticket</a>
                   </li>
                   <li class="nav-item contact">
-                    <a class="nav-link disabled" aria-disabled="true">Contact Us</a>
+                    <a class="nav-link ">Contact Us</a>
                   </li>
                 </ul>
+                
               </div> 
+              
           </div>
+          <div class="contactsection">
+            <p>Contact Us Now</p>
+            <p class="header-contact">(+62) 81587 6218</p>
+         </div>
+         <img class="fa fa-phone" src="./assets/images/phone.png" height="45px" width="45px"></img>
       </nav>
-        </div>
-            <div class="heading">
+         </div>
+        
+            <!-- <div class="heading">
                 <h1>Online Bus Ticketing Solution</h1>
                 <p>Reliable, Safe and Secured ticketing System.</p>
-            </div>
+            </div> -->
+            <div class="heading">
+              <h1 id="animatedText" ></h1>
+              <p  id="animatedText1" class="animatedText1"></p>
+              <!-- <p id="subtitle" class="hidden">Reliable, Safe and Secured ticketing System.</p> -->
+          </div>
             <div class="action">
-                <a class="btn custom-btn">Book Now</a>
+                <a class="btn custom-btn wow fadeInDown" href="">Book Now</a>
             </div>
         </div>      
     </section>
-    <div class="route">
+    <div class="route wow fadeInUp">
         <div class="row rowSpacing">
             <div class="col-4">
                 <div class="mb-3">
                     <label for="inputState" class="inputState">From</label>
-                    <select id="inputState" class="form-control">
+                    <select id="inputState" class="form-control wow fadeInLeft">
                       <option selected disabled>Select From</option>
                       <option>Mwanza</option>
                       <option>Tabora</option>
@@ -79,7 +94,7 @@
             <div class="col-4">
               <div class="mb-3">
                 <label for="inputState" class="inputState">To</label>
-                <select id="inputState" class="form-control">
+                <select id="inputState" class="form-control wow fadeInDown">
                   <option selected disabled>Select To</option>
                   <option>Mwanza</option>
                   <option>Tabora</option>
@@ -93,32 +108,32 @@
             <div class="col-4">   
               <label for="exampleFormControlInput1" class="inputStatel inputState">When</label>
                 <div class="placeholder-shown" data-placeholder="Travel Date">
-                    <input type="date" class="form-control" id="exampleFormControlInput1">
+                    <input type="date" class="form-control wow fadeInRight" id="exampleFormControlInput1">
                 </div>
              </div>
             <div class="searchBuses">
-                <a class="btn custom-btn1">Search Buses</a>
+                <a class="btn custom-btn1 wow fadeInLeft">Search Buses</a>
             </div>
         </div>
     </div>
     
     <section class="bus-operator">
-        <h3>Bus Operators</h3>
+        <h3 class="wow fadeInUp">Bus Operators</h3>
         <div class="operatorcarousel">
             <div class="row ">
-               <div class="col-3 operatorspace">
+               <div class="col-3 operatorspace wow fadeInUp">
                   <i class="fa fa-car"></i>
                   <p>Ali Hassan Senchonge</p>
                </div>
-               <div class="col-3 operatorspace">
+               <div class="col-3 operatorspace wow fadeInUp">
                   <i class="fa fa-car"></i>
                   <p>Ali Hassan Senchonge</p>
                </div>
-               <div class="col-3 operatorspace">
+               <div class="col-3 operatorspace wow fadeInUp">
                   <i class="fa fa-car"></i>
                   <p>Ali Hassan Senchonge</p>
                </div>
-               <div class="col-3 operatorspace">
+               <div class="col-3 operatorspace wow fadeInUp">
                   <i class="fa fa-car"></i>
                   <p>Ali Hassan Senchonge</p>
                </div>
@@ -126,12 +141,12 @@
             </div>
             <div class="row">
               <div class="col-6">
-                 <div class="viewall">
+                 <div class="viewall wow fadeInLeft">
                   <p>View All</p>
                  </div>
               </div>
               <div class="col-6">
-                 <div class="backnext">
+                 <div class="backnext wow fadeInRight">
                   <i class="fa fa-angle-left"></i>
                   <i class="fa fa-angle-right"></i>
                  </div>
@@ -141,11 +156,11 @@
     </section>
 
     <section class="howitworks">
-        <h4>How It Works?</h4>
+        <h4 class="wow fadeInUp">How It Works?</h4>
         <div class="row cards">
             <div class="col-4">
-              <div class="card" style="width: 25rem;height:14rem">
-                <div class="card-body">
+              <div class="card wow fadeInUp" style="width: 25rem;height:14rem">
+                <div class="card-body ">
                   <h3>Plan Your Travel</h3>
                   <p class="card-text">Figure out your travel budget, Decide on your travel bus, Choose a destination and travel dates.</p>
                 
@@ -153,8 +168,8 @@
               </div>
             </div>
             <div class="col-4">
-              <div class="card" style="width: 25rem; height:14rem">
-                <div class="card-body">
+              <div class="card wow fadeInUp" style="width: 25rem; height:14rem">
+                <div class="card-body ">
                   <h3>Plan Your Travel</h3>
                   <p class="card-text">Figure out your travel budget, Decide on your travel bus, Choose a destination and travel dates</p>
                  
@@ -162,8 +177,8 @@
               </div>
             </div>
             <div class="col-4">
-              <div class="card" style="width: 25rem;height:14rem">
-                <div class="card-body">
+              <div class="card wow fadeInUp" style="width: 25rem;height:14rem">
+                <div class="card-body ">
                   <h3>Plan Your Travel</h3>
                   <p class="card-text">Figure out your travel budget, Decide on your travel bus, Choose a destination and travel dates</p>
                  
@@ -175,75 +190,70 @@
 
     <section class="get_our_app">
         <div class="get_app">
-          <h1 class="getapptitle">Find A Bus In Near</h1>  
-          <h1 class="getapptitle1">You With Our App</h1>
-          <p class="get_app_description">Lorem ipsum dolor sit amet, 
+          <h1 class="getapptitle wow fadeInUp">Find A Bus In <span class="near">Near</span></h1> 
+          <div class="bus">
+
+          </div> 
+          <h1 class="getapptitle1 wow fadeInRight">You With Our App</h1>
+          <p class="get_app_description wow fadeInRight">Lorem ipsum dolor sit amet, 
             consectetur adipiscing elit, sed do eiusmod tempor incididunt
              ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
              quis nostrud exercitation ullamco laboris nisi</p>
 
         </div>
         <div class="get_button">
-            <button class="appstore">
+            <button class="appstore wow fadeInUp">
               <a href=""><img src="./assets/images/appstore.png" alt="AppStore"></a>
             </button>
-            <button class="playstore">
+            <button class="playstore wow fadeInUp">
              <a href=""><img src="./assets/images/playstore.png" alt="playstore"></a> 
             </button>
 
           
         </div>
     </section>
+
     <section class="faq">
       <div class="container-xxl ">
         <div class="container ">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <div class="d-inline-block  faq1 text-primary">FAQ</div>
+                <div class="d-inline-block  faq1 ">FAQ</div>
             </div> 
-            <div class="accordion" id="accordionExample">
+            <div class="accordion  wow fadeInUp" id="accordionExample">
     
-                <div class="accordion-item my-1">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <div class="accordion-item my-1 wow fadeInLeft">
+                  <h2 class="accordion-header ">
+                    <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         What is BUSTICKET?
                     </button>
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        Whether you are looking for a residential, commercial, or industrial 
-                        property, we have an extensive portfolio to cater to your diverse 
-                        needs. From beautiful homes and apartments to office spaces and 
-                        retail properties, we have it all covered.
+                      BUSTICKETING refers to the digital platform or service that facilitates the purchase, reservation, and management of bus tickets, typically accessible online through websites or mobile apps. It provides users with the convenience of planning and securing bus travel arrangements in advance.
                     </div>
                   </div>
                 </div>
-                <div class="accordion-item my-1">
-                  <h2 class="accordion-header">
+                <div class="accordion-item my-1 wow fadeInRight">
+                  <h2 class="accordion-header ">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
                         Does Booking online Cost Me More
                     </button>
                   </h2>
                   <div id="collapseTwo" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        Whether you are looking for a residential, commercial, or industrial 
-                        property, we have an extensive portfolio to cater to your diverse 
-                        needs. From beautiful homes and apartments to office spaces and 
-                        retail properties, we have it all covered.
+                      No, booking online typically does not cost more; it often offers discounts and convenience compared to traditional methods.
                     </div>
                   </div>
                 </div>
-                <div class="accordion-item my-1">
-                  <h2 class="accordion-header">
+                <div class="accordion-item my-1 wow fadeInUp">
+                  <h2 class="accordion-header wow ">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
                       How Does A Traveller Purchase A Ticket?
                     </button>
                   </h2>
                   <div id="collapseThree" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        Whether you are looking for a residential, commercial, or industrial 
-                        property, we have an extensive portfolio to cater to your diverse 
-                        needs. From beautiful homes and apartments to office spaces and 
-                        retail properties, we have it all covered.
+                      A traveler can purchase a bus ticket by selecting their desired route, date, and time on an online booking platform, providing personal details, and making a payment using a credit/debit card or other accepted payment methods. The ticket is then sent via email or available for download.
                     </div>
                   </div>
                 </div>
@@ -256,55 +266,56 @@
     
             
     </section>
+
     <section class="footer">
          <div class="row">
               <div class="col-3 footerdescription">
-                 <p>Whether you are looking for a residential, commercial, or industrial 
+                 <p class="wow fadeInLeft">Whether you are looking for a residential, commercial, or industrial 
                   property, we have an extensive portfolio to cater to your diverse 
                   needs. From beautiful homes and apartments to office spaces and </p>
                   <div class="social-media">
-                       <div class="facebook">
+                       <div class="facebook wow fadeInUp">
                        <a href="" class="social"><i class="fa fa-facebook" style="font-size:25px;" aria-hidden="true"></i></a> 
                        </div>
-                       <div class="twitter">
+                       <div class="twitter wow fadeInUp">
                         <a href="" class="social"><i class="fa fa-twitter" style="font-size:25px;" aria-hidden="true"></i></a>
                        </div>
-                       <div class="instagram">
+                       <div class="instagram wow fadeInUp">
                        <a href="" class="social"> <i class="fa fa-instagram" style="font-size:25px;" aria-hidden="true"></i></a>
                        </div>
-                       <div class="youtube">
+                       <div class="youtube wow fadeInUp">
                           <a href="" class="social"><i class="fa fa-youtube-play" style="font-size:25px;" aria-hidden="true"></i></a>
                        </div>
                      
                   </div>
               </div>
               <div class="col-3">
-                    <div class="links">
+                    <div class="links ">
                         <h3>Important Links</h3>
-                        <div class="link1">
+                        <div class="link1 wow fadeInLeft">
                           <p>></p>
                           <a href="" class="about">About Us</a>
                         </div>
-                        <div class="link2">
+                        <div class="link2 wow fadeInLeft">
                           <p>></p>
                           <a href="" class="service">Service</a>
                         </div>
-                        <div class="link3">
+                        <div class="link3 wow fadeInLeft">
                           <p>></p>
                           <a href="" class="projects">Projects</a>
                         </div>
-                        <div class="link4">
+                        <div class="link4 wow fadeInLeft">
                           <p>></p>
                           <a href="" class="pricing">Pricing</a>
                         </div>
-                        <div class="link5">
+                        <div class="link5 wow fadeInLeft">
                           <p>></p>
                           <a href="" class="contact">Contact</a>
                         </div>
                     </div>
               </div>
               <div class="col-3">
-                <div class="contactinfo">
+                <div class="contactinfo wow fadeInUp">
                        <h3>Contact Info</h3>
                        <div class="address">
                         <i class="fa fa-map-marker"style="font-size:24px;"></i>
@@ -314,7 +325,7 @@
                         </div>
                       </div>
                       <div class="phone">
-                        <i class="fa fa-phone"></i>
+                        <img class="fa fa-phone1"  src="./assets/images/phone.png" height="25px" width="25px"></img>
                         <div class="phone1">
                           <p>(+62)81587 6218</p>  
                         </div>
@@ -331,7 +342,97 @@
          </div>
       
     </section>
-    <script src="./assets/js/bootstrap.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/wow.js"></script>
+    <script src="./assets/js/bootstrap.js"></script>
+    <script>
+        
+  // Initialize WOW.js
+  new WOW().init();
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const textElement = document.getElementById('animatedText');
+    const texts = ["Online Bus Ticketing Solution", "Easy and Fast Booking", "Best Prices Guaranteed"];
+    let textIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    const typingSpeed = 90; // Typing speed in milliseconds
+    const deletingSpeed = 50; // Deleting speed in milliseconds
+    const delayBeforeDelete = 2100; // Delay before starting to delete
+    const delayBeforeNext = 900; // Delay before typing next text
+
+    function type() {
+        const currentText = texts[textIndex];
+        if (isDeleting) {
+            if (charIndex > 0) {
+                charIndex--;
+                textElement.textContent = currentText.slice(0, charIndex);
+                setTimeout(type, deletingSpeed);
+            } else {
+                isDeleting = false;
+                textIndex = (textIndex + 1) % texts.length;
+                setTimeout(type, delayBeforeNext);
+            }
+        } else {
+            if (charIndex < currentText.length) {
+                textElement.textContent = currentText.slice(0, charIndex + 1);
+                charIndex++;
+                setTimeout(type, typingSpeed);
+            } else {
+                isDeleting = true;
+                setTimeout(type, delayBeforeDelete);
+            }
+        }
+    }
+
+    setTimeout(type, typingSpeed);
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const textElement = document.getElementById('animatedText1');
+    const word = "Reliable, Safe and Secured ticketing System.";
+    let charIndex = 0;
+    let isDeleting = false;
+    const typingSpeed = 60; // Typing speed in milliseconds
+    const deletingSpeed = 30; // Deleting speed in milliseconds
+    const delayBeforeDelete = 500; // Delay before starting to delete
+    const delayBeforeNext = 500; // Delay before typing next text
+
+    function type() {
+        if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            setTimeout(type, delayBeforeNext);
+            return;
+        }
+
+        textElement.textContent = word.substring(0, charIndex);
+
+        if (!isDeleting && charIndex === word.length) {
+            isDeleting = true;
+            setTimeout(type, delayBeforeDelete);
+            return;
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            charIndex = 0;
+            setTimeout(type, delayBeforeNext);
+            return;
+        }
+
+        if (isDeleting) {
+            charIndex--;
+        } else {
+            charIndex++;
+        }
+
+        setTimeout(type, isDeleting ? deletingSpeed : typingSpeed);
+    }
+
+    setTimeout(type, typingSpeed);
+});
+
+    </script>
+
 </body>
 </html>
