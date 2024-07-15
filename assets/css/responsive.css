@@ -1,0 +1,231 @@
+@media only screen and (max-width: 767px) {
+/* landing and navbar start here */
+.feedback1{
+    display:none;
+
+}
+.contactsection{
+    display: none;
+}
+.navbar-nav{
+    text-align:center;
+}
+.home {
+    position:relative;
+    left:-8em;
+}
+.about{
+    position:relative;
+    left:-1em; 
+}
+.download{
+    position:relative;
+    left:-1em;
+}
+.contact{
+    position:relative;
+    left:0em; 
+}
+.feedback{
+    position: relative;
+    left:2em;
+}
+.heading h1{
+    position: relative;
+    top:-2em;
+    font-size:53px;
+}
+.heading p{
+    position: relative;
+    top:-5em;
+}
+.action{
+    position: relative;
+    top:-4em;
+}
+.custom-btn {
+    white-space: nowrap;
+    text-align: center;
+    position: relative;
+    padding:0.5em 4em;
+    
+}
+.custom-btn a{
+    padding-right: 2em !important;
+    
+}
+/* landing and navbar ends here */
+/* 
+bus-operators start here */
+.bus-operator {
+    height:100vh !important;
+    margin-top:-10px;
+    position:relative;
+    top:-27em;
+}
+.route{
+    display: block;
+    height:43vh;
+    width:80%;
+}
+.searchBuses{
+   margin-top:7em;
+}
+
+.custom-btn1 {
+    white-space: nowrap;
+    font-size: 20px; 
+    width:100%;
+    color: #fff; 
+    background-color: #1E88E1; 
+    border-radius: 30px 30px; 
+    text-align: center; 
+    text-decoration: none; 
+    transition: background-color 0.3s, transform 0.3s; 
+    padding-left: -4em !important;
+    position:relative;
+    left:-1em;
+}
+.operatorcarousel{
+    margin-top:4em;
+    position:relative;
+    left:3em !important;
+}
+.navigate{
+    position:relative;
+    top:-6em;
+}
+.backnext{
+    position: relative;
+    top:8.5em;
+    left:2em;
+}
+.howitworks h4{
+    position:relative;
+    top:-15em;
+    left:-4em;
+}
+/* .card {
+    flex: 1 1 100%;
+} */
+
+
+
+/* how it works copy from rows */
+.cards {
+    position:relative;
+    top: -25em;
+    left:0.5em;
+    width: 100%;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+    margin-bottom:1em;
+  }
+
+  .card-body h3,
+  .card-body p {
+    margin: 1em;
+  }
+
+.get_app{
+    position:relative;
+    top:-4em;
+    left:-24em;
+    
+}
+.getapptitle{
+    width:100%;
+    position:relative;
+    left:-4em;
+}
+.near{
+    position:relative;
+    left:-3em;
+}
+.getapptitle1{
+    width:100%;
+    left:-2.3em;
+}
+.get_app_description{
+    position:relative;
+    left:6em;
+    width:100%;
+    padding:0 1em;
+}
+.get_button{
+    position: relative;
+    top:-4em;
+    left:-34.5em;
+}
+.playstore{
+    position: relative;
+    top:-14.5em;
+    left:6em;
+   
+}
+.links{
+    position:relative;
+    top:-3em;
+}
+.linksHeading{
+    width:100%;
+}
+.footerdescription{
+    width:90%;
+    left:0em;
+    margin: 2em 0 2em 2em;
+}
+.contactinfo{
+    position: relative;
+    left:-4.5em;
+    width:100%;
+    display:inline;
+    
+}
+
+.footer{
+    height:110vh;
+}
+.contactHeading{
+    width:100%;
+}
+.address{
+    width:500% !important;
+    display:flex;
+}
+.contactinfo h3{
+    width:200%;
+}
+.address1{
+    width:300% !important;
+    display:inline;
+    margin-left:2em;
+    padding:0;
+}
+.email1{
+    width:500% !important;
+    display:flex;
+}
+.phone{
+    width:900% !important;
+    display:flex; 
+}
+.links{
+    position:relative;
+    top:-40em;
+}
+
+
+
+
+
+
+
+
+}
+
+
+

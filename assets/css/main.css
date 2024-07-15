@@ -3,12 +3,18 @@
 *::after {
     box-sizing: border-box;
 }
-.body{
-    margin: 0;
-    padding: 0;
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
     font-family: 'Poppins', sans-serif !important; 
-    overflow-x: hidden;
+   
 }
+
+/* landing page and navbar */
+
 .background_image{
     height:fit-content;
     width: 100%;
@@ -35,10 +41,10 @@
     
 }
 .heading p{
-    font-size:26px;
-    margin-top: 2.5em;
+    font-size:22px;
+    margin-top: 1.5em;
     font-weight:700;
-    top:-1em;  
+    top:-3em;  
     font-family: "Work Sans" !important;
     
  }
@@ -74,7 +80,7 @@
 }
 
 .contact{
-    padding-left:5em;
+    padding-left:3em;
 }
 
 .call{
@@ -112,7 +118,7 @@
     border: none; 
     border-radius: 30px 30px; 
     text-align: center; 
-    text-decoration: none; 
+    text-decoration: none;  
     transition: background-color 0.3s, transform 0.3s; 
 }
 
@@ -152,11 +158,11 @@
     width: 80%;
     height: 30vh;
     align-items: center;
-    position: absolute;
+    position: relative;
     background-color: #fff;
     left:10%;
     z-index:100;
-    top:53.5em;
+    top:-8.5em;
     padding: 2em 2em;
     border-radius: 10px 10px !important;
 }
@@ -171,10 +177,12 @@ select.form-control {
 .bus-operator{
     background-color: #1E88E1;
     margin: 0;
-    top:-17em;
+    /* top:-17em; */
     width: 100%;
-    height:50vh;
+    height:55vh;
     color:#fff;
+    position:relative;
+    top:-17em;
 }
 
 .rowSpacing{
@@ -190,7 +198,7 @@ select.form-control {
 
 
 .action{
-    margin-top:4.6em;
+    margin-top:4.6em; 
 }
 
 .inputState{
@@ -201,13 +209,13 @@ select.form-control {
 
 .bus-operator h3{
     position:absolute;
-    top:42em;
+    top:7.5em;
     left:5.3em;
 }
 .operatorcarousel{
     display: flex;
-    position: absolute;
-    top:76.5em;
+    position: relative;
+    top:17em;
     left:9.5em;
 }
 .operatorspace{
@@ -222,6 +230,7 @@ select.form-control {
     font-family: "Work Sans", sans-serif;
    
 }
+
 .fa-car{
  font-size:24px;  
  color: #1E88E1;
@@ -264,8 +273,11 @@ select.form-control {
     margin:2px;
     border-radius: 2px 2px;
   }
+/* 
+  end landing and navbar */
+  
   .howitworks{
-    height:40vh;
+    height:15vh;
     background-color: #fff;
   }
   .howitworks h4{
@@ -277,15 +289,17 @@ select.form-control {
     font-weight: 700;
     line-height: 16px; /* 57.143% */
     letter-spacing: 0.4px;
-    position:absolute;
+    position:relative;
+    top:-8em;
     margin-top: 1em;
-    margin-left: 6em;
+    margin-left: 4.5em;
 
   }
   .cards{
-    position: absolute;
-    top:95em;
-    left:8.4em  
+    position: relative;
+    top:-13em;
+    left:7em;  
+    width: 90%;
   }
   .card {
     width: 25rem;
@@ -297,19 +311,20 @@ select.form-control {
 }
 
 .card-body {
-    padding: 20px;
+    padding: 20px 0;
     font-family: "Work Sans", sans-serif;
 }
-  .card-body{
+  /* .card-body{
       margin-top:3em;
-  }
+  } */
 
-  .card-body h2{
+  .card-body h3{
     color: #494141;
     font-family: "Work Sans";
     font-style: normal;
     font-weight: 500;
     line-height: 16px;
+    margin:2em 0 0 1em;
   }
   .card-body p{
     color: #494141;
@@ -318,8 +333,9 @@ select.form-control {
     font-style: normal;
     font-weight: 500;
     line-height: 16px;
-    margin-top: 0.5em;
+    margin: 1em 2em 0 2em;
   }
+  
   .get_our_app{
     width: 100%;
     margin: 0;
@@ -353,8 +369,8 @@ select.form-control {
     margin-left: 14.2em;
     font-family: "Work Sans";
     width:30%;
-    position: absolute;
-    left:30.7em;
+    position: relative;
+    left:30em;
     text-align: left;
     margin-top:0.8em;
     font-size: 20px;
@@ -362,6 +378,8 @@ select.form-control {
   }
 
   .appstore {
+    position:relative;
+    top:-11em;
     background-color: transparent;
     padding: 0;
     cursor: pointer;
@@ -390,6 +408,8 @@ select.form-control {
 }
 
 .playstore {
+    position:relative;
+    top:-11em;
     background-color: transparent;
     padding: 0;
     cursor: pointer;
@@ -400,9 +420,8 @@ select.form-control {
 
 .playstore img {
     display: block;
-    width: 150px;  /* Adjust the width as needed */
-    height: auto;  /* Maintain the aspect ratio */
-   
+    width: 150px;  
+    height: auto;  
 }
 
 .playstore:focus {
@@ -410,7 +429,7 @@ select.form-control {
 }
 
 .playstore:hover img {
-    opacity: 0.8;  /* Optional: change opacity on hover */
+    opacity: 0.8; 
 }
 
 /* faq */
@@ -449,13 +468,11 @@ select.form-control {
     background-image: none;
 }
 
-/* Add thicker black border-top to accordion body */
 .accordion-body {
     border-top: 1px solid rgb(210, 206, 206); 
     padding-top: 1rem; 
 }
 
-/* Style for the arrow */
 .accordion-button::after {
     content: "\25BC"; 
     font-size: 1.4rem;
@@ -491,13 +508,257 @@ select.form-control {
     line-height: 16px; 
     letter-spacing: 0.4px;
 }
+
+
+
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #fff;
+    margin-top: 20px;
+}
+
+
+/* animation */
+
+.heading {
+    text-align: center;
+    /* margin-top: 10px; */
+}
+
+.animatedText {
+    display: inline-block;
+    border-right: 2px solid #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+
+
+/* ends animation */
+
+
+.contactsection{
+    height: 86.8px;
+    width: 190px;
+    margin:-5em 0 !important;
+    padding:-2em;
+    background-color: #4F94CE;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px #4F94CE;
+
+}
+
+.contactsection p{
+    color:#fff;
+    margin-top: 1em;
+}
+.header-contact{
+    font-size: 13px !important;
+    position: absolute;
+    top:2.3em;
+    margin-left: 2.8em;
+  
+}
+.fa-phone{
+    z-index:10000;
+    position: absolute;
+    right:8.7em;
+    font-size:48px;
+    bottom: 1.2em;
+}
+
+
+.bus{
+    background-color: #1E88E1;
+    width:250px;
+    height:17px;
+    position:relative;
+    left:64em;
+    top:-1.7em;
+    z-index: 1;
+}
+.near{
+  margin-left: 3.6em;
+}
+
+.fa-phone1{
+
+   background-color:  #1E88E1;
+    padding:8px 8px;
+    border-radius: 50% 50%;
+    position:relative;
+    bottom: 0.7em;
+}
+
+
+/* about page */
+.about_background_image{
+    height:fit-content;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/getapp.jpeg');
+    background-size: cover;
+    background-position: cover;
+    background-repeat: no-repeat;
+    height: 38.95vh; 
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.about_heading{
+   color:#fff;
+    margin-top: 1.8em;
+    font-size: 50px;
+}
+.about_description{
+    height:50vh;
+    background-color:  #fff;
+    color:#000;
+    font-family: "Heebo";
+}
+
+.about_description1{
+    position:relative;
+    /* top:-11em; */
+    font-size:20px;
+    margin:0.4em 2em;
+    padding:1em;
+    text-align: left;
+}
+
+.about_description2{
+    position:relative;
+    top:-5em;
+    font-size:20px;
+    margin:4em 2em;
+    text-align: left;
+    padding:1em;
+}
+.description{
+    position:relative;
+    top:4em;
+}
+.about_description3{
+    padding-left: -3em;
+}
+.about_description3{
+    position:relative;
+    top:-9em;
+    font-size:20px;
+    margin:4em 2em;
+    text-align: left;
+    padding:1em;
+}
+.about_description4{
+    position:relative;
+    top:-14em;
+    font-size:20px;
+    margin:4em 2em;
+    text-align: left;
+    padding:1em;
+}
+
+/* download ticket css */
+.download_ticket_card{
+    height:50vh;
+    background-color:  #fff;
+    /* background: linear-gradient(to right, rgba(30, 136, 225, 0.8), rgba(0, 176, 255, 0.8), rgba(106, 183, 255, 0.8)); */
+    color:#000;
+    font-family: "Heebo";
+    margin-top:5em;
+}
+
+.download_heading{
+    color:#fff;
+     margin-top: 1.8em;
+     font-size: 50px;
+ }
+
+ .card1 {
+    background: #fff;
+    border-radius: 15px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    width: 40em;
+    padding: 20px;
+    color: white;
+    margin-left: 27.3em;
+    margin-top:10em !important;
+    height:40vh;
+    
+}
+.download_ticket p{
+    color:#000 !important;
+    font-size: 22px;
+    font-family: "Heebo";
+}
+.downloadButton{
+    height:3em;
+    width:30em;
+}
+
+.contactus{
+    height:40vh;
+    background-color:  #fff;
+    /* background: linear-gradient(to right, rgba(30, 136, 225, 0.8), rgba(0, 176, 255, 0.8), rgba(106, 183, 255, 0.8)); */
+    color:#000;
+    font-family: "Heebo";
+    margin-top:5em;
+}
+
+.contact p{
+    color:#000 !important;
+    font-size: 22px;
+    font-family: "Heebo";
+    margin-top:5px;
+}
+
+
+
+.contactus2{
+    height:73vh;
+    background-color:  #fff;
+    /* background: linear-gradient(to right, rgba(30, 136, 225, 0.8), rgba(0, 176, 255, 0.8), rgba(106, 183, 255, 0.8)); */
+    color:#000;
+    font-family: "Heebo";
+    margin-top:5em;
+}
+
+.contact2 p{
+    color:#000 !important;
+    font-size: 22px;
+    font-family: "Heebo";
+    margin-top:5px;
+}
+
+
+
+.card2 {
+    background: #fff;
+    border-radius: 15px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    width: 40em;
+    padding: 20px;
+    color: white;
+    margin-left: 27.3em;
+    margin-top:10em !important;
+    height:62vh;
+    
+}
+
+
+
+/* footer */
 .footer{
     height:60vh;
     background-color: #000;
     color:#fff;
 }
 .footerdescription{
-   position:absolute;
+   position:relative;
    width:25%;
    left:9em;
    margin-top:12em;
@@ -562,7 +823,7 @@ select.form-control {
  }
 
  .links{
-    position:absolute;
+    position:relative;
     left:38em;
     margin-top:6em;
     font-family: Barlow;
@@ -573,17 +834,17 @@ select.form-control {
     color:#fff;
     margin-top:3px;
  }
+
  .link1{
     display: flex;
     color:#1E88E1;
     background-color: none!important;
+    width:15em;
  }
  .link1 p{
     font-size:30px;
  }
- .about{
-    padding-left:33px;
- }
+
  
  .link2{
     display: flex;
@@ -638,22 +899,27 @@ select.form-control {
  }
  .contact{
     padding-left:33px;
-    padding-right: 5em;
+    padding-right: 2em;
  }
  .links h3{
     margin-bottom: 2.3em;
     font-weight: 600
  }
+ .feedback{
+    padding-left:-5em;
+    padding-right:3em;
+}
+
  .contactinfo{
-    position:absolute;
-    left:52em;
+    position:relative;
+    left:-4em;
     margin-top:8em;
-    width: 40%!important;
+    width: 60%!important;
  }
 .address{
     display:flex;
     color:#fff;
-    width:60% !important;
+    width:100% !important;
     padding-top:2.1em;
    
 }
@@ -662,7 +928,7 @@ select.form-control {
    
 }
 .address1{
-    position: absolute;
+    position: relative;
     padding-left:3em;
     border-bottom: 1px solid #CFCFCF;
 }
@@ -697,83 +963,70 @@ select.form-control {
     padding-left:3em;
     border-bottom: 1px solid #CFCFCF; 
 }
-hr {
-    border: 0;
-    height: 1px;
-    background: #fff;
-    margin-top: 20px;
+
+
+/* terms and condition */
+.terms_description{
+    height:200vh;
+    background-color:  #fff;
+    color:#000;
+    font-family: "Heebo";
 }
-
-
-/* animation */
-
-.heading {
-    text-align: center;
-    /* margin-top: 10px; */
+.terms_description h3{
+  text-align:left;
+  position:relative;
+  left:1.9em;
+  top:1.5em;
 }
-
-#animatedText {
-    display: inline-block;
-    border-right: 2px solid #fff;
-    white-space: nowrap;
-    overflow: hidden;
-}
-
-
-/* ends animation */
-
-
-.contactsection{
-    height: 86.8px;
-    width: 190px;
-    margin:-5em 0 !important;
-    padding:-2em;
-    background-color: #4F94CE;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border: 1px #4F94CE;
-
-}
-
-.contactsection p{
-    color:#fff;
-    margin-top: 1em;
-}
-.header-contact{
-    font-size: 13px !important;
-    position: absolute;
-    top:2.3em;
-    margin-left: 2.8em;
-  
-}
-.fa-phone{
-    z-index:10000;
-    position: absolute;
-    right:8.7em;
-    font-size:48px;
-}
-
-.custom-btn1{
-    position: static;
-}
-.bus{
-    background-color: #1E88E1;
-    width:250px;
-    height:17px;
+.terms{
     position:relative;
-    left:64em;
-    top:-1.7em;
-    z-index: 1;
+    top:6em;
+    text-align:left;
+    margin:-3em 4em 1em 2.7em;
+    font-size: 20px;
 }
-.near{
-  margin-left: 3.6em;
+.terms li{
+    margin-top: 0.5em;
+}
+.responsibility{
+text-align:left;
+  position:relative;
+  margin-right:2em;
+  top:5em !important;
 }
 
-.fa-phone1{
-
-   background-color:  #1E88E1;
-    padding:8px 8px;
-    border-radius: 50% 50%;
+.respli{
     position:relative;
-    bottom: 0.7em;
+    top:10em;
+    text-align:left;
+    margin:-3em 4em 1em 2.7em;
+    font-size: 20px;
+}
+.respli li{
+    margin-top: 0.2em;
+}
+.not_responsibility{
+  text-align:left;
+  position:relative;
+  margin-right:2em;
+  top:8em !important;
+}
+.no_respli{
+    position:relative;
+    top:14em;
+    text-align:left;
+    margin:-3em 4em 1em 2.7em;
+    font-size: 20px;
+}
+
+.privacy_description{
+    height:100vh;
+    background-color:  #fff;
+    color:#000;
+    font-family: "Heebo";
+}
+.privacy_description h3{
+  text-align:center;
+  position:relative;
+  top:1.5em;
 }

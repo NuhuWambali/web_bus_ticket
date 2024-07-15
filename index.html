@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="./assets/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,10 +20,43 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./assets/css/animate.min.css" ></link>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="./assets/css/animate.min.css" >
+    <link rel="stylesheet" href="./assets/css/responsive.css" >
+    <title>BusTicket - Home</title>
     
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 </head>
+<style>
+  .navbar-nav {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-item {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000;
+}
+.language-switcher {
+      display: inline-block;
+      cursor: pointer;
+      color:#000;
+    }
+    .language-toggle {
+      display: flex;
+      align-items: center;
+    }
+    .language-toggle i {
+      margin-right: 5px;
+    }
+    .fa-globe{
+      color:#000;
+    }
+</style>
 <body>
     <section class="landing">
         <div class="background_image">
@@ -37,50 +71,62 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item home">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                   </li>
                   <li class="nav-item about">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="./about.html">About Us</a>
                   </li>
                   <li class="nav-item download">
-                    <a class="nav-link" href="#">Download Ticket</a>
+                    <a class="nav-link" href="./download_ticket.html">Download Ticket</a>
                   </li>
                   <li class="nav-item contact">
-                    <a class="nav-link ">Contact Us</a>
+                    <a class="nav-link " href="./contact.html">Contact Us</a>
                   </li>
-                </ul>
-                
+                  <li class="nav-item feedback">
+                    <a class="nav-link" href="./customer_feedback.html" data-toggle="modal" data-target="#feedbackModal">
+                      Customer Feedback
+                    </a>
+                  </li>
+                  <li class="nav-item dropdown feedback1" >
+                    <div class="language-switcher pl-4" onclick="toggleLanguage()" id="languageSwitcher">
+                      <a href="#" id="languageLink" class="language-toggle">
+                        <i class="fa fa-globe mt-2" style="font-size: 23px;"></i> <span id="currentLanguage" class="text-dark mt-2">SW</span>
+                      </a>
+                    </div> 
+                  </li>
+                </ul>     
               </div> 
               
           </div>
           <div class="contactsection">
             <p>Contact Us Now</p>
             <p class="header-contact">(+62) 81587 6218</p>
-         </div>
-         <img class="fa fa-phone" src="./assets/images/phone.png" height="45px" width="45px"></img>
-      </nav>
+            <img class="fa fa-phone phone_header" src="./assets/images/phone.png" height="45px" width="45px"></img>
          </div>
         
-            <!-- <div class="heading">
-                <h1>Online Bus Ticketing Solution</h1>
-                <p>Reliable, Safe and Secured ticketing System.</p>
-            </div> -->
+      </nav>
+         </div>
             <div class="heading">
+                <h1>Web e-Ticketing </h1>
+                <!-- <h1>Web Electronic Ticketing Solution</h1> -->
+                <p>Reliable, Safe and Secured Bus Ticketing System.</p>
+            </div>
+            <!-- <div class="heading">
               <h1 id="animatedText" ></h1>
               <p  id="animatedText1" class="animatedText1"></p>
-              <!-- <p id="subtitle" class="hidden">Reliable, Safe and Secured ticketing System.</p> -->
-          </div>
+          </div> -->
             <div class="action">
                 <a class="btn custom-btn wow fadeInDown" href="">Book Now</a>
             </div>
         </div>      
     </section>
+ <div class="empty"></div>
     <div class="route wow fadeInUp">
         <div class="row rowSpacing">
-            <div class="col-4">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
                 <div class="mb-3">
                     <label for="inputState" class="inputState">From</label>
-                    <select id="inputState" class="form-control wow fadeInLeft">
+                    <select id="inputState" class="form-control wow fadeInLeft big-select">
                       <option selected disabled>Select From</option>
                       <option>Mwanza</option>
                       <option>Tabora</option>
@@ -91,11 +137,11 @@
                     </select>
                 </div>
             </div> 
-            <div class="col-4">
+            <div class="col-4 col-md-4 col-sm-12 col-12">
               <div class="mb-3">
                 <label for="inputState" class="inputState">To</label>
                 <select id="inputState" class="form-control wow fadeInDown">
-                  <option selected disabled>Select To</option>
+                  <option selected disabled>Select To </option>
                   <option>Mwanza</option>
                   <option>Tabora</option>
                   <option>Manyara</option>
@@ -105,41 +151,43 @@
                 </select>
             </div>
             </div>
-            <div class="col-4">   
+            <div class="col-4 col-md-4 col-sm-12 col-12">   
               <label for="exampleFormControlInput1" class="inputStatel inputState">When</label>
                 <div class="placeholder-shown" data-placeholder="Travel Date">
                     <input type="date" class="form-control wow fadeInRight" id="exampleFormControlInput1">
                 </div>
              </div>
             <div class="searchBuses">
-                <a class="btn custom-btn1 wow fadeInLeft">Search Buses</a>
+                <a class="btn  custom-btn1 wow fadeInLeft">Search Buses</a>
             </div>
         </div>
     </div>
-    
+
+
     <section class="bus-operator">
         <h3 class="wow fadeInUp">Bus Operators</h3>
         <div class="operatorcarousel">
-            <div class="row ">
-               <div class="col-3 operatorspace wow fadeInUp">
+          <div class="row">
+              <div class="col-12 col-sm-6 col-md-3 operatorspace wow fadeInUp">
                   <i class="fa fa-car"></i>
                   <p>Ali Hassan Senchonge</p>
-               </div>
-               <div class="col-3 operatorspace wow fadeInUp">
+              </div>
+              <div class="col-12 col-sm-6 col-md-3 operatorspace wow fadeInUp">
                   <i class="fa fa-car"></i>
                   <p>Ali Hassan Senchonge</p>
-               </div>
-               <div class="col-3 operatorspace wow fadeInUp">
-                  <i class="fa fa-car"></i>
-                  <p>Ali Hassan Senchonge</p>
-               </div>
-               <div class="col-3 operatorspace wow fadeInUp">
-                  <i class="fa fa-car"></i>
-                  <p>Ali Hassan Senchonge</p>
-               </div>
-           
+              </div>
+         
+          
+            <div class="col-12 col-sm-6 col-md-3 operatorspace wow fadeInUp">
+                <i class="fa fa-car"></i>
+                <p>Ali Hassan Senchonge</p>
             </div>
-            <div class="row">
+            <div class="col-12 col-sm-6 col-md-3 operatorspace wow fadeInUp">
+                <i class="fa fa-car"></i>
+                <p>Ali Hassan Senchonge</p>
+            </div>
+        <!-- </div> -->
+            <div class="row navigate">
               <div class="col-6">
                  <div class="viewall wow fadeInLeft">
                   <p>View All</p>
@@ -157,49 +205,67 @@
 
     <section class="howitworks">
         <h4 class="wow fadeInUp">How It Works?</h4>
-        <div class="row cards">
-            <div class="col-4">
-              <div class="card wow fadeInUp" style="width: 25rem;height:14rem">
+        <!-- <div class="row cards">
+            <div class="col-4 ">
+              <div class="card " style="width: 25rem;height:14rem">
                 <div class="card-body ">
                   <h3>Plan Your Travel</h3>
                   <p class="card-text">Figure out your travel budget, Decide on your travel bus, Choose a destination and travel dates.</p>
-                
                 </div>
               </div>
             </div>
             <div class="col-4">
-              <div class="card wow fadeInUp" style="width: 25rem; height:14rem">
+              <div class="card " style="width: 25rem; height:14rem">
                 <div class="card-body ">
                   <h3>Plan Your Travel</h3>
-                  <p class="card-text">Figure out your travel budget, Decide on your travel bus, Choose a destination and travel dates</p>
-                 
+                  <p class="card-text">Figure out your travel budget, Decide on your travel bus, Choose a destination and travel dates</p> 
                 </div>
               </div>
             </div>
             <div class="col-4">
-              <div class="card wow fadeInUp" style="width: 25rem;height:14rem">
+              <div class="card " style="width: 25rem;height:14rem">
                 <div class="card-body ">
                   <h3>Plan Your Travel</h3>
-                  <p class="card-text">Figure out your travel budget, Decide on your travel bus, Choose a destination and travel dates</p>
-                 
+                  <p class="card-text">Figure out your travel budget, Decide on your travel bus, Choose a destination and travel dates</p> 
                 </div>
               </div>
             </div>
-        </div>
+        </div> -->
+        <div class="row cards">
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="card">
+              <div class="card-body">
+                <h3>Plan Your Travel</h3>
+                <p class="card-text">Figure out your travel budget, Decide on your travel bus, Choose a destination and travel dates.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="card">
+              <div class="card-body">
+                <h3>Plan Your Travel</h3>
+                <p class="card-text">Figure out your travel budget, Decide on your travel bus, Choose a destination and travel dates.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="card">
+              <div class="card-body">
+                <h3>Plan Your Travel</h3>
+                <p class="card-text">Figure out your travel budget, Decide on your travel bus, Choose a destination and travel
+        
     </section>
 
     <section class="get_our_app">
         <div class="get_app">
           <h1 class="getapptitle wow fadeInUp">Find A Bus In <span class="near">Near</span></h1> 
           <div class="bus">
-
           </div> 
           <h1 class="getapptitle1 wow fadeInRight">You With Our App</h1>
           <p class="get_app_description wow fadeInRight">Lorem ipsum dolor sit amet, 
             consectetur adipiscing elit, sed do eiusmod tempor incididunt
              ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
              quis nostrud exercitation ullamco laboris nisi</p>
-
         </div>
         <div class="get_button">
             <button class="appstore wow fadeInUp">
@@ -208,8 +274,7 @@
             <button class="playstore wow fadeInUp">
              <a href=""><img src="./assets/images/playstore.png" alt="playstore"></a> 
             </button>
-
-          
+    
         </div>
     </section>
 
@@ -268,171 +333,197 @@
     </section>
 
     <section class="footer">
-         <div class="row">
-              <div class="col-3 footerdescription">
-                 <p class="wow fadeInLeft">Whether you are looking for a residential, commercial, or industrial 
-                  property, we have an extensive portfolio to cater to your diverse 
-                  needs. From beautiful homes and apartments to office spaces and </p>
-                  <div class="social-media">
-                       <div class="facebook wow fadeInUp">
-                       <a href="" class="social"><i class="fa fa-facebook" style="font-size:25px;" aria-hidden="true"></i></a> 
-                       </div>
-                       <div class="twitter wow fadeInUp">
-                        <a href="" class="social"><i class="fa fa-twitter" style="font-size:25px;" aria-hidden="true"></i></a>
-                       </div>
-                       <div class="instagram wow fadeInUp">
-                       <a href="" class="social"> <i class="fa fa-instagram" style="font-size:25px;" aria-hidden="true"></i></a>
-                       </div>
-                       <div class="youtube wow fadeInUp">
-                          <a href="" class="social"><i class="fa fa-youtube-play" style="font-size:25px;" aria-hidden="true"></i></a>
-                       </div>
-                     
-                  </div>
-              </div>
-              <div class="col-3">
-                    <div class="links ">
-                        <h3>Important Links</h3>
-                        <div class="link1 wow fadeInLeft">
-                          <p>></p>
-                          <a href="" class="about">About Us</a>
-                        </div>
-                        <div class="link2 wow fadeInLeft">
-                          <p>></p>
-                          <a href="" class="service">Service</a>
-                        </div>
-                        <div class="link3 wow fadeInLeft">
-                          <p>></p>
-                          <a href="" class="projects">Projects</a>
-                        </div>
-                        <div class="link4 wow fadeInLeft">
-                          <p>></p>
-                          <a href="" class="pricing">Pricing</a>
-                        </div>
-                        <div class="link5 wow fadeInLeft">
-                          <p>></p>
-                          <a href="" class="contact">Contact</a>
-                        </div>
+      <div class="row">
+           <div class="col-3 footerdescription">
+              <p class="wow fadeInLeft">Whether you are looking for a residential, commercial, or industrial 
+               property, we have an extensive portfolio to cater to your diverse 
+               needs. From beautiful homes and apartments to office spaces and </p>
+               <div class="mediaicon">
+               <div class="social-media">
+                    <div class="facebook wow fadeInUp">
+                    <a href="" class="social"><i class="fa fa-facebook" style="font-size:25px;" aria-hidden="true"></i></a> 
                     </div>
-              </div>
-              <div class="col-3">
-                <div class="contactinfo wow fadeInUp">
-                       <h3>Contact Info</h3>
-                       <div class="address">
-                        <i class="fa fa-map-marker"style="font-size:24px;"></i>
-                        <div class="address1">
-                          <p>Jl. Raya Kuta No.21, Kuta, Bali<br>80361</p>
-                          <p></p>
-                        </div>
-                      </div>
-                      <div class="phone">
-                        <img class="fa fa-phone1"  src="./assets/images/phone.png" height="25px" width="25px"></img>
-                        <div class="phone1">
-                          <p>(+62)81587 6218</p>  
-                        </div>
-                      </div>
-                      <div class="email">
-                        <i class="fa fa-envelope"></i>
-                        <div class="email1">
-                          <p>support@domain.com</p>  
-                        </div>
-                </div>
-              <div class="col-3">
-                
-              </div>
-         </div>
-      
-    </section>
-    <script src="./assets/js/main.js"></script>
-    <script src="./assets/js/wow.js"></script>
+                    <div class="twitter wow fadeInUp">
+                     <a href="" class="social"><i class="fa fa-twitter" style="font-size:25px;" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="instagram wow fadeInUp">
+                    <a href="" class="social"> <i class="fa fa-instagram" style="font-size:25px;" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="youtube wow fadeInUp">
+                       <a href="" class="social"><i class="fa fa-youtube-play" style="font-size:25px;" aria-hidden="true"></i></a>
+                    </div>
+                  
+                 </div>
+               </div>
+           </div>
+           <div class="col-3">
+                 <div class="links ">
+                     <h3 class="linksHeading">Important Links</h3>
+                        <div class="all_links">
+
+                      
+                         <div class="link1 wow fadeInLeft">
+                           <p>></p>
+                           <a href="./terms_and_condition.html" class="about">Terms and Conditions</a>
+                         </div>
+                         <div class="link2 wow fadeInLeft">
+                           <p>></p>
+                           <a href="./privacy_policy.html" class="service">Privacy policy</a>
+                         </div>
+                         <div class="link3 wow fadeInLeft">
+                           <p>></p>
+                           <a href="" class="projects">Projects</a>
+                         </div>
+                         <div class="link4 wow fadeInLeft">
+                           <p>></p>
+                           <a href="" class="pricing">Pricing</a>
+                         </div>
+                         <div class="link5 wow fadeInLeft">
+                           <p>></p>
+                           <a href="" class="contact">Contact</a>
+                         </div>       
+                       </div>
+                 </div>
+           </div>
+           <div class="col-3">
+             <div class="contactinfo wow fadeInUp">
+                    <h3 class="contactHeading">Contact Info</h3>
+                    <div class="address">
+                     <i class="fa fa-map-marker"style="font-size:24px;"></i>
+                     <div class="address1">
+                       <p>Jl. Raya Kuta No.21, Kuta, Bali<br>80361</p>
+                       <p></p>
+                     </div>
+                   </div>
+                   <div class="phone">
+                     <img class="fa fa-phone1"  src="./assets/images/phone.png" height="25px" width="25px"></img>
+                     <div class="phone1">
+                       <p>(+62)81587 6218</p>  
+                     </div>
+                   </div>
+                   <div class="email">
+                     <i class="fa fa-envelope"></i>
+                     <div class="email1">
+                       <p>support@domain.com</p>  
+                     </div>
+             </div>
+           <div class="col-3">
+             
+           </div>
+            </div>
+           </div>
+   
+ </section>
+
+
+
     <script src="./assets/js/bootstrap.js"></script>
-    <script>
-        
-  // Initialize WOW.js
-  new WOW().init();
+    <script src="./assets/js/main.js"></script>
+    <!-- <script src="./assets/js/wow.js"></script> -->
+
+    <!-- <script>
+                new WOW().init();
+                document.addEventListener('DOMContentLoaded', function() {
+                  const textElement = document.getElementById('animatedText');
+                  const texts = ["Online Bus Ticketing Solution", "Easy and Fast Booking", "Best Prices Guaranteed"];
+                  let textIndex = 0;
+                  let charIndex = 0;
+                  let isDeleting = false;
+                  const typingSpeed = 200;
+                  const deletingSpeed = 200; 
+                  const delayBeforeDelete = 1500; 
+                  const delayBeforeNext = 1000; 
+
+                  function type() {
+                      const currentText = texts[textIndex];
+                      if (isDeleting) {
+                          if (charIndex > 0) {
+                              charIndex--;
+                              textElement.textContent = currentText.slice(0, charIndex);
+                              setTimeout(type, deletingSpeed);
+                          } else {
+                              isDeleting = false;
+                              textIndex = (textIndex + 1) % texts.length;
+                              setTimeout(type, delayBeforeNext);
+                          }
+                      } else {
+                          if (charIndex < currentText.length) {
+                              textElement.textContent = currentText.slice(0, charIndex + 1);
+                              charIndex++;
+                              setTimeout(type, typingSpeed);
+                          } else {
+                              isDeleting = true;
+                              setTimeout(type, delayBeforeDelete);
+                          }
+                      }
+                  }
+
+                  setTimeout(type, typingSpeed);
+              });
 
 
-  document.addEventListener('DOMContentLoaded', function() {
-    const textElement = document.getElementById('animatedText');
-    const texts = ["Online Bus Ticketing Solution", "Easy and Fast Booking", "Best Prices Guaranteed"];
-    let textIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
-    const typingSpeed = 90; // Typing speed in milliseconds
-    const deletingSpeed = 50; // Deleting speed in milliseconds
-    const delayBeforeDelete = 2100; // Delay before starting to delete
-    const delayBeforeNext = 900; // Delay before typing next text
+              document.addEventListener('DOMContentLoaded', function() {
+                  const textElement = document.getElementById('animatedText1');
+                  const word = "Reliable, Safe and Secured ticketing System.";
+                  let charIndex = 0;
+                  let isDeleting = false;
+                  const typingSpeed = 200; 
+                  const deletingSpeed = 200; 
+                  const delayBeforeDelete = 1500;
+                  const delayBeforeNext = 1000; 
 
-    function type() {
-        const currentText = texts[textIndex];
-        if (isDeleting) {
-            if (charIndex > 0) {
-                charIndex--;
-                textElement.textContent = currentText.slice(0, charIndex);
-                setTimeout(type, deletingSpeed);
-            } else {
-                isDeleting = false;
-                textIndex = (textIndex + 1) % texts.length;
-                setTimeout(type, delayBeforeNext);
-            }
-        } else {
-            if (charIndex < currentText.length) {
-                textElement.textContent = currentText.slice(0, charIndex + 1);
-                charIndex++;
-                setTimeout(type, typingSpeed);
-            } else {
-                isDeleting = true;
-                setTimeout(type, delayBeforeDelete);
-            }
-        }
+                  function type() {
+                      if (isDeleting && charIndex === 0) {
+                          isDeleting = false;
+                          setTimeout(type, delayBeforeNext);
+                          return;
+                      }
+
+                      textElement.textContent = word.substring(0, charIndex);
+
+                      if (!isDeleting && charIndex === word.length) {
+                          isDeleting = true;
+                          setTimeout(type, delayBeforeDelete);
+                          return;
+                      } else if (isDeleting && charIndex === 0) {
+                          isDeleting = false;
+                          charIndex = 0;
+                          setTimeout(type, delayBeforeNext);
+                          return;
+                      }
+
+                      if (isDeleting) {
+                          charIndex--;
+                      } else {
+                          charIndex++;
+                      }
+
+                      setTimeout(type, isDeleting ? deletingSpeed : typingSpeed);
+                  }
+
+                  setTimeout(type, typingSpeed);
+              });
+
+    </script> -->
+<script>
+     function toggleLanguage() {
+      var currentLanguage = document.getElementById("currentLanguage");
+      var languageLink = document.getElementById("languageLink");
+
+      if (currentLanguage.innerText === "ENG") {
+        currentLanguage.innerText = 'SW';
+        alert("Language switched to Swahili");
+        // languageLink.href = '/index.html'; 
+       
+      } else {
+        currentLanguage.innerText = 'ENG';
+        alert("Language switched to English");
+        // languageLink.href = '/index.html'; 
+       
+      }
+
+      console.log("Switched to " + currentLanguage.innerText);
     }
-
-    setTimeout(type, typingSpeed);
-});
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    const textElement = document.getElementById('animatedText1');
-    const word = "Reliable, Safe and Secured ticketing System.";
-    let charIndex = 0;
-    let isDeleting = false;
-    const typingSpeed = 60; // Typing speed in milliseconds
-    const deletingSpeed = 30; // Deleting speed in milliseconds
-    const delayBeforeDelete = 500; // Delay before starting to delete
-    const delayBeforeNext = 500; // Delay before typing next text
-
-    function type() {
-        if (isDeleting && charIndex === 0) {
-            isDeleting = false;
-            setTimeout(type, delayBeforeNext);
-            return;
-        }
-
-        textElement.textContent = word.substring(0, charIndex);
-
-        if (!isDeleting && charIndex === word.length) {
-            isDeleting = true;
-            setTimeout(type, delayBeforeDelete);
-            return;
-        } else if (isDeleting && charIndex === 0) {
-            isDeleting = false;
-            charIndex = 0;
-            setTimeout(type, delayBeforeNext);
-            return;
-        }
-
-        if (isDeleting) {
-            charIndex--;
-        } else {
-            charIndex++;
-        }
-
-        setTimeout(type, isDeleting ? deletingSpeed : typingSpeed);
-    }
-
-    setTimeout(type, typingSpeed);
-});
-
-    </script>
-
+</script>
 </body>
 </html>
