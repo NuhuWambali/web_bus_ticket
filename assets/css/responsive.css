@@ -215,8 +215,43 @@ bus-operators start here */
 }
 .links{
     position:relative;
-    top:-40em;
+    top:13em;
+    left:2em;
 }
+.all_links{
+    position:relative;
+    top:-2em;
+}
+
+/* about us */
+.about_description{
+    height:140vh;
+}
+.about_address{
+    margin-left:2em !important;
+}
+
+.download_bg{
+    height:50vh;
+}
+.download_ticket_card{
+    height:60vh;
+}
+.download_ticket{
+    padding-top:2em;
+    position:relative;
+    left:-26em;
+    width:90%;
+    height:55vh;
+}
+.downloadButton{
+    width:80%;
+}
+
+
+
+
+
 
 
 

@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/css/animate.min.css" ></link>
-    
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <style>
   .contactHeading{
@@ -59,7 +59,7 @@
 <body>
 
     <!-- <section class="landing"> -->
-        <div class="about_background_image">
+        <div class="about_background_image download_bg">
         <!-- navbar -->
         <div class="nav">
           <nav class="navbar navbar-expand-lg  wow fadeInUp">
@@ -86,14 +86,12 @@
                      <a class="nav-link " href="./contact.html">Customer Feedback</a>
                    </li>
                    <li class="nav-item dropdown feedback1" >
-                     <a class="nav-link" onclick="toggleDropdown()" id="languageDropdown" >
-                       <i class="fa fa-language" style="font-size:23px"></i>
-                     </a>
-                     <div class="dropdown-menu" id="dropdownMenu">
-                       <a class="dropdown-item" href="#" onclick="changeLanguage('en')">English</a>
-                       <a class="dropdown-item" href="#" onclick="changeLanguage('sw')">Swahili</a>
-                     </div>
-                   </li>
+                    <div class="language-switcher pl-4" onclick="toggleLanguage()" id="languageSwitcher">
+                      <a href="#" id="languageLink" class="language-toggle">
+                        <i class="fa fa-globe mt-2" style="font-size: 23px;"></i> <span id="currentLanguage" class="text-dark mt-2">SW</span>
+                      </a>
+                    </div> 
+                  </li>
                  </ul>     
                </div> 
                
@@ -209,38 +207,25 @@
       
     </section>
     <script>
-      function toggleDropdown() {
-        const dropdownMenu = document.getElementById('dropdownMenu');
-        dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
-      }
-      
-      function openDropdown() {
-        const dropdownMenu = document.getElementById('dropdownMenu');
-        dropdownMenu.style.display = 'block';
-      }
-      
-      function changeLanguage(language) {
-        if (language === 'en') {
-          alert('Language changed to English');
-       
-        } else if (language === 'sw') {
-          alert('Language changed to Swahili');
-     
-        }
-      }
-  
-      window.onclick = function(event) {
-        if (!event.target.matches('#languageDropdown') && !event.target.matches('#languageDropdown *')) {
-          const dropdownMenus = document.getElementsByClassName('dropdown-menu');
-          for (let i = 0; i < dropdownMenus.length; i++) {
-            const openDropdown = dropdownMenus[i];
-            if (openDropdown.style.display === 'block') {
-              openDropdown.style.display = 'none';
-            }
-          }
-        }
-      }
-  </script>
+      function toggleLanguage() {
+       var currentLanguage = document.getElementById("currentLanguage");
+       var languageLink = document.getElementById("languageLink");
+ 
+       if (currentLanguage.innerText === "ENG") {
+         currentLanguage.innerText = 'SW';
+         alert("Language switched to Swahili");
+         // languageLink.href = '/index.html'; 
+        
+       } else {
+         currentLanguage.innerText = 'ENG';
+         alert("Language switched to English");
+         // languageLink.href = '/index.html'; 
+        
+       }
+ 
+       console.log("Switched to " + currentLanguage.innerText);
+     }
+ </script>
    <!-- <script src="./assets/js/wow.js"></script> -->
    <script src="./assets/js/bootstrap.js"></script>
    <script src="./assets/js/main.js"></script>
