@@ -171,9 +171,10 @@ bus-operators start here */
     top:-3em;
 }
 .linksHeading{
-    width:100%;
+    width:400%;
   
 }
+
 .links h3{
     margin-left:0.3em;
 }
@@ -189,6 +190,7 @@ bus-operators start here */
     display:inline;
     
 }
+
 
 .footer{
     height:110vh;
@@ -248,6 +250,13 @@ bus-operators start here */
     width:90%;
     height:55vh;
 }
+.download_ticket_nav{
+    position:relative;
+    top:-10em;
+}
+
+
+
 .downloadButton{
     width:80%;
 }
@@ -280,6 +289,12 @@ bus-operators start here */
 .downloadButton{
     margin-bottom:10em;
 }
+.download_ticket_phone_number{
+    width:50% !important;
+    text-align:left;
+}
+
+
 
 .card2{
     position:relative;
@@ -436,12 +451,43 @@ bus-operators start here */
 }
 
 
+/* adjusting  the diesign */
 
 
+  .privacy_policy_footer{
+    position: relative;
+    top:235em;
+  }
+.important_links_cancellation{
+   padding-left:3em!important;
+   width:400%!important;
+}
+
+  .privacy_policy_contact_heading{
+    padding-left:2.5em!important;
+      width:300%!important;
+  }
+
+  .privacy_policy_important{
+    padding-left:-7em!important;
+    width:300%!important;
+  }
+  .all_links_contact{
+    margin-left:-5em;
+  }
+  .phone_privacy{
+    width:450%!important;
+  }
+
+/* 
+  .important_links_cancellation{
+    width:200%!important;
+  } */
 
 
-
-
+.terms_and_condition_important_links{
+    padding-right:14em!important;
+}
 
 
 

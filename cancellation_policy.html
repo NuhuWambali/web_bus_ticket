@@ -86,7 +86,7 @@
 
 <body>
     <!-- <section class="landing"> -->
-        <div class="about_background_image">
+        <div class="about_background_image cancellation_policy_bg">
         <!-- navbar -->
          <div class="nav">
          <nav class="navbar navbar-expand-lg  wow fadeInUp">
@@ -115,26 +115,28 @@
                       Customer Feedback
                     </a>
                   </li>
-                  <li class="nav-item dropdown feedback1" >
+                  <li class="nav-item dropdown feedback1 download_ticket_nav" >
                     <div class="language-switcher pl-4" onclick="toggleLanguage()" id="languageSwitcher">
                       <a href="#" id="languageLink" class="language-toggle">
                         <i class="fa fa-globe mt-2" style="font-size: 23px;"></i> <span id="currentLanguage" class="text-dark mt-2">SW</span>
                       </a>
                     </div> 
                   </li>
+                  <li class="nav-item ">
+                    <a class="nav-link login" class="login" href="">Login</a>
+                  </li>
                 </ul>     
               </div> 
               
           </div>
           <div class="contactsection">
-            <p>Contact Us Now</p>
-            <p class="header-contact">(+62) 81587 6218</p>
-            <img class="fa fa-phone phone_header" src="./assets/images/phone.png" height="45px" width="45px"></img>
-         </div>
+            <p class="header-contact"><a class="btn " style="color:#fff; border:1px solid #fff;margin-top:-1.5em;" href="">Login</a></p>
+            <img class="fa fa-phone phone_header" src="./assets/images/user.png" height="50px" width="50px" ></img>
+          </div>
         
          </nav>
          </div>
-         <div class="about_heading">
+         <div class="about_heading policy">
             <h1 class="about_heading">Cancellation Policy</h1>
         </div>
     </section>
@@ -168,6 +170,82 @@
     </section>
 
 
+
+
+    
+    <section class="footer ">
+      <div class="row">
+           <div class="col-3 footerdescription">
+              <p class="wow fadeInLeft">Whether you are planning a quick day trip or a longer journey, we offer an extensive range of express bus ticketing options to cater to your travel needs. From comfortable seating to reliable schedules, 
+                our services ensure a smooth and pleasant travel experience. </p>
+               <div class="mediaicon">
+               <div class="social-media">
+                    <div class="facebook wow fadeInUp">
+                    <a href="" class="social"><i class="fa fa-facebook" style="font-size:25px;" aria-hidden="true"></i></a> 
+                    </div>
+                    <div class="twitter wow fadeInUp">
+                     <a href="" class="social"><i class="fa fa-twitter" style="font-size:25px;" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="instagram wow fadeInUp">
+                    <a href="" class="social"> <i class="fa fa-instagram" style="font-size:25px;" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="youtube wow fadeInUp">
+                       <a href="" class="social"><i class="fa fa-youtube-play" style="font-size:25px;" aria-hidden="true"></i></a>
+                    </div>
+                  
+                 </div>
+               </div>
+           </div>
+           <div class="col-3">
+                 <div class="links download cancellation_policy">
+                     <h3 class="linksHeading service import ">Important Links</h3>
+                        <div class="all_links all_linksdownload">
+                         <div class="link1 wow fadeInLeft">
+                           <p>></p>
+                           <a href="./terms_and_condition.html"" class="about">Terms and Conditions</a>
+                         </div>
+                         <div class="link2 wow fadeInLeft">
+                           <p>></p>
+                           <a href="./privacy_policy.html" class="service">Privacy policy</a>
+                         </div>
+                         <div class="link3 wow fadeInLeft">
+                           <p>></p>
+                           <a href="./cancellation_policy.html" class="service">Cancellation Policy</a>
+                         </div>
+                         
+                       </div>
+                 </div>
+           </div>
+           <div class="col-3">
+             <div class="contactinfo wow fadeInUp">
+                    <h3 class="contactHeading contactHeadingDownloadTicket contac cancellation_policy_contact important_links_cancellation">Contact Info</h3>
+                    <div class="address">
+                     <i class="fa fa-map-marker"style="font-size:24px;"></i>
+                     <div class="address1">
+                       <p>Jl. Raya Kuta No.21, Kuta, Bali<br>80361</p>
+                       <p></p>
+                     </div>
+                   </div>
+                   <div class="phone">
+                     <img class="fa fa-phone1"  src="./assets/images/phone.png" height="25px" width="25px"></img>
+                     <div class="phone1">
+                       <p class="service contac1">(+62) 81587 6218</p>  
+                     </div>
+                   </div>
+                   <div class="email">
+                     <i class="fa fa-envelope"></i>
+                     <div class="email1">
+                       <p>support@domain.com</p>  
+                     </div>
+             </div>
+           <div class="col-3">
+             
+           </div>
+            </div>
+           </div>
+   
+   </section>
+<!-- 
     <section class="footer">
       <div class="row">
            <div class="col-3 footerdescription">
@@ -209,14 +287,7 @@
                            <p>></p>
                            <a href="./cancellation_policy.html" class="projects">Cancellation Policy</a>
                          </div>
-                         <div class="link4 wow fadeInLeft">
-                           <p>></p>
-                           <a href="" class="pricing">Pricing</a>
-                         </div>
-                         <div class="link5 wow fadeInLeft">
-                           <p>></p>
-                           <a href="" class="contact">Contact</a>
-                         </div>       
+                             
                        </div>
                  </div>
            </div>
@@ -249,7 +320,7 @@
            </div>
    
     </section>
-   
+    -->
 <script>
    function toggleLanguage() {
       var currentLanguage = document.getElementById("currentLanguage");

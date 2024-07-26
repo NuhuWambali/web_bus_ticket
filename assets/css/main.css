@@ -604,16 +604,18 @@ hr {
     background-size: cover;
     background-position: cover;
     background-repeat: no-repeat;
-    height: 38.95vh; 
+    height: 40.95vh; 
     align-items: center;
     text-align: center;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
+
 .about_heading{
    color:#fff;
     margin-top: 1.8em;
     font-size: 50px;
 }
+
 .about_description{
     height:50vh;
     background-color:  #fff;
@@ -638,6 +640,7 @@ hr {
     text-align: left;
     padding:1em;
 }
+
 .description{
     position:relative;
     top:4em;
@@ -666,7 +669,6 @@ hr {
 .download_ticket_card{
     height:50vh;
     background-color:  #fff;
-    /* background: linear-gradient(to right, rgba(30, 136, 225, 0.8), rgba(0, 176, 255, 0.8), rgba(106, 183, 255, 0.8)); */
     color:#000;
     font-family: "Heebo";
     margin-top:5em;
@@ -687,14 +689,15 @@ hr {
     color: white;
     margin-left: 27.3em;
     margin-top:10em !important;
-    height:40vh;
-    
+    height:40vh;  
 }
+
 .download_ticket p{
     color:#000 !important;
     font-size: 22px;
     font-family: "Heebo";
 }
+
 .downloadButton{
     height:3em;
     width:30em;
@@ -703,7 +706,6 @@ hr {
 .contactus{
     height:40vh;
     background-color:  #fff;
-    /* background: linear-gradient(to right, rgba(30, 136, 225, 0.8), rgba(0, 176, 255, 0.8), rgba(106, 183, 255, 0.8)); */
     color:#000;
     font-family: "Heebo";
     margin-top:5em;
@@ -716,12 +718,9 @@ hr {
     margin-top:5px;
 }
 
-
-
 .contactus2{
     height:73vh;
     background-color:  #fff;
-    /* background: linear-gradient(to right, rgba(30, 136, 225, 0.8), rgba(0, 176, 255, 0.8), rgba(106, 183, 255, 0.8)); */
     color:#000;
     font-family: "Heebo";
     margin-top:5em;
@@ -734,8 +733,6 @@ hr {
     margin-top:5px;
 }
 
-
-
 .card2 {
     background: #fff;
     border-radius: 15px; 
@@ -745,8 +742,7 @@ hr {
     color: white;
     margin-left: 27.3em;
     margin-top:4em !important;
-    height:62vh;
-    
+    height:62vh;   
 }
 
 
@@ -757,6 +753,7 @@ hr {
     background-color: #000;
     color:#fff;
 }
+
 .footerdescription{
    width:25%;
    margin-left:9em;
@@ -1133,9 +1130,12 @@ privacy policy */
 
 
   /* cancellation policy */
-  .cancellation_policy{
-    height:90vh;
+  /* .cancellation_policy{
+    height:80vh;
   }
+
+  */
+  
   .cancellation_policy1{
     margin-top:3em;
     text-align: left;
@@ -1150,7 +1150,7 @@ privacy policy */
     margin-top:1em;
     text-align: left;
     font-size:21px;
-  }
+  } 
 
 
   /* refund policy */
@@ -1163,8 +1163,9 @@ privacy policy */
     font-size:21px;
   }
 
-  @media (max-width: 100px) {
+  @media (min-width: 1000px) {
     .login {
         visibility: hidden !important;
     }
 }
+
