@@ -172,6 +172,10 @@ bus-operators start here */
 }
 .linksHeading{
     width:100%;
+  
+}
+.links h3{
+    margin-left:0.3em;
 }
 .footerdescription{
     width:90%;
@@ -247,6 +251,206 @@ bus-operators start here */
 .downloadButton{
     width:80%;
 }
+.contactHeadingDownloadTicket{
+    margin-left:3em;
+}
+.linksHeadingDownloadTicket{
+    width:600%;
+    position:relative;
+    left:-3.8em;
+    
+}
+.all_linksdownload{
+    position:relative;
+    left:-2em !important;
+}
+
+
+/* contact us */
+.contact_small_device{
+    position:relative;
+    left:-26em;
+    width:90%;
+    top:-8em;
+    height:67vh;
+}
+.email11{
+    margin-left:0em !important;
+}
+.downloadButton{
+    margin-bottom:10em;
+}
+
+.card2{
+    position:relative;
+    top:-3em;
+   
+}
+.name{
+    margin-left:-18em!important;
+}
+.phonenumber{
+    margin-left:-7em!important;
+    width:100%;
+}
+.headingContact{
+    width:300%!important;
+}
+.linksHeadingContact{
+    width:300%!important;
+    margin-left:-2em;
+}
+.all_linksContact{
+    margin-left:-5em;
+}
+.phone1Contact p{
+    width:400%!important;
+    margin-left:-2em;
+}
+
+
+
+/* customer feedback i small screens*/
+.customer_feedback_small_screen{
+    height:65vh!important;
+}
+.customer_feedback_bg_image{
+    height:56vh!important;
+}
+
+
+.customer_feedback_header{
+    font-size:32px;
+}
+.card_small_screen{
+    width:90%!important;
+    height:60vh !important;
+}
+
+.emoji-container .emoji-label::after {
+    content: attr(data-label);
+    display: block;
+    text-align: center;
+  }
+  .emoji-container .emoji-label::after {
+    display: none;
+  }
+  
+.customer_feedback_linksHeading{
+    width:300% !important;
+}
+
+
+.customer_feedback_address1{
+   margin-left:2em!important;
+}
+
+
+.customer_feedback_phone1{
+    width:300%!important;
+}
+
+/* terms and conditions */
+.terms_description h3{
+   font-size:24px;
+   padding:0 0.1em;
+   position:relative;
+   left:1em;
+}
+.terms{
+    margin:0 1em;
+    padding:0 1em;
+    width:100%;
+    font-size:18px;
+    position:relative;
+    top:2em;
+}
+
+.terms_footer{
+    position:relative;
+    top:100em;
+}
+
+.responsibility h3{
+    font-size:24px;
+    padding:0 0.1em;
+    position:relative;
+    left:1em;
+}
+
+.respli{
+    padding:0 1em;
+    width:100%;
+    font-size:18px;
+    margin-left:1.2em;
+    
+}
+.no_respli{
+    padding:0 1em;
+    width:100%;
+    font-size:18px;
+    margin-left:1.1em;
+}
+.terms_and_cond_bg_image{
+    height:50vh!important;
+}
+.contact_terms{
+    margin-left:3em;
+}
+.phone1_terms p{
+    width:300%!important;
+    margin-left:0em;
+}
+
+/* .linksHeading{
+    width: 300% !important;
+    margin-left:-2em;
+}
+.all_links{
+    margin-left:-4.9em;
+}
+.customer_feedback_links{
+    margin-left:0.2em;
+}
+.privacy_link{
+    width:300%;
+}
+
+
+.home{
+    margin-left:-8em;
+} */
+
+.service{
+    text-wrap: nowrap;
+
+}
+.import{
+    margin-left:-3em!important;
+}
+.contac{
+    margin-left:-0.2em!important;
+}
+.contac1{
+    margin-left:-2em !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

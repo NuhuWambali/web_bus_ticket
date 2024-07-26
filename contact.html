@@ -21,6 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/css/animate.min.css" ></link>
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     
 </head>
 <style>
@@ -87,17 +88,18 @@
                    <li class="nav-item home">
                      <a class="nav-link " aria-current="page" href="./index.html">Home</a>
                    </li>
+                   <li class="nav-item download">
+                    <a class="nav-link" href="./download_ticket.html">Download Ticket</a>
+                  </li>
                    <li class="nav-item about">
                      <a class="nav-link" href="./about.html">About Us</a>
                    </li>
-                   <li class="nav-item download">
-                     <a class="nav-link" href="./download_ticket.html">Download Ticket</a>
-                   </li>
+                  
                    <li class="nav-item contact">
                      <a class="nav-link active" href="./contact.html">Contact Us</a>
                    </li>
                    <li class="nav-item feedback">
-                     <a class="nav-link " href="./contact.html">Customer Feedback</a>
+                     <a class="nav-link " href="./customer_feedback.html">Customer Feedback</a>
                    </li>
                    <li class="nav-item dropdown feedback1" >
                     <div class="language-switcher pl-4" onclick="toggleLanguage()" id="languageSwitcher">
@@ -123,29 +125,33 @@
         </div>
     </section>
 
-  
+
+
  <section class="contactus2">
-    <div class="card2 contact2">
-       <p ><b>Leave Us A Message</b></p>  
-       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label name" style="color:#000;text-align: left;"><b>Name</b></label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label email11" style="color:#000;margin-right:30em !important;"><b>Email</b></label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label" style="color:#000;margin-right:30em !important;"><b>Phone Number</b></label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Phone Number">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label"  style="color:#000;margin-right:32em !important; font-family: Heebo"><b>Message</b></label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your Message here"></textarea>
-      </div>
-      <button type="submit" class="btn btn-dark downloadButton mt-3">Submit</button>
-    </div>
-    
+  <form action="">
+      <div class="row">
+          <div class="card2 contact2 contact_small_device">
+            <p ><b>Leave Us A Message</b></p>  
+            <div class="col-lg-12 col-md-12 col-sm-12 mb-3">
+              <label for="exampleFormControlInput1" class="form-label name" style="color:#000;text-align: left; margin-left:2em;"><b>Name</b></label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 mb-3">
+              <label for="exampleFormControlInput1" class="form-label email11" style="color:#000;margin-right:30em !important;"><b>Email</b></label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+            </div>
+            <div class=" col-lg-12 col-md-12 col-sm-12 mb-3">
+              <label for="exampleFormControlInput1" class="form-label phonenumber" style="color:#000;margin-right:30em !important;"><b>Phone Number</b></label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Phone Number">
+            </div>
+            <div class=" col-lg-12 col-md-12 col-sm-12 mb-3">
+              <label for="exampleFormControlInput1" class="form-label"  style="color:#000;margin-right:32em !important; font-family: Heebo"><b>Message</b></label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your Message here"></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark downloadButton mt-3">Submit</button>
+          </div> 
+      </div>       
+ </form>
  </section>
 
 
@@ -153,8 +159,7 @@
 
 
 
-
-
+ 
  <section class="footer">
   <div class="row">
        <div class="col-3 footerdescription">
@@ -181,21 +186,21 @@
        </div>
        <div class="col-3">
              <div class="links ">
-                 <h3 class="linksHeading">Important Links</h3>
-                    <div class="all_links">
+                 <h3 class="linksHeading linksHeadingContact">Important Links</h3>
+                    <div class="all_links all_linksContact">
 
                   
-                     <div class="link1 wow fadeInLeft">
+                     <div class="link1 wow fadeInLeft link1contact">
                        <p>></p>
                        <a href="./terms_and_condition.html" class="about">Terms and Conditions</a>
                      </div>
                      <div class="link2 wow fadeInLeft">
                        <p>></p>
-                       <a href="" class="service">Service</a>
+                       <a href="./privacy_policy.html" class="service">Privacy policy</a>
                      </div>
                      <div class="link3 wow fadeInLeft">
                        <p>></p>
-                       <a href="" class="projects">Projects</a>
+                       <a href="./cancellation_policy.html" class="projects">Cancellation Policy</a>
                      </div>
                      <div class="link4 wow fadeInLeft">
                        <p>></p>
@@ -210,7 +215,7 @@
        </div>
        <div class="col-3">
          <div class="contactinfo wow fadeInUp">
-                <h3 class="contactHeading">Contact Info</h3>
+                <h3 class="contactHeading headingContact" style="padding-left:2em;width:100%">Contact Info</h3>
                 <div class="address">
                  <i class="fa fa-map-marker"style="font-size:24px;"></i>
                  <div class="address1">
@@ -220,7 +225,7 @@
                </div>
                <div class="phone">
                  <img class="fa fa-phone1"  src="./assets/images/phone.png" height="25px" width="25px"></img>
-                 <div class="phone1">
+                 <div class="phone1 phone1Contact">
                    <p>(+62)81587 6218</p>  
                  </div>
                </div>

@@ -744,7 +744,7 @@ hr {
     padding: 20px;
     color: white;
     margin-left: 27.3em;
-    margin-top:10em !important;
+    margin-top:4em !important;
     height:62vh;
     
 }
@@ -758,9 +758,8 @@ hr {
     color:#fff;
 }
 .footerdescription{
-   position:relative;
    width:25%;
-   left:9em;
+   margin-left:9em;
    margin-top:12em;
    font-family: "Heebo";
    font-style: normal;
@@ -1019,8 +1018,13 @@ text-align:left;
     font-size: 20px;
 }
 
+/* 
+privacy policy */
+
+
+
 .privacy_description{
-    height:100vh;
+    height:270vh;
     background-color:  #fff;
     color:#000;
     font-family: "Heebo";
@@ -1029,4 +1033,138 @@ text-align:left;
   text-align:center;
   position:relative;
   top:1.5em;
+}
+.policy_description{
+    margin-top:3em;
+    text-align: left;
+    font-size:21px;
+  }
+  .policy_description1{
+    margin-top:1em;
+    text-align: left;
+    font-size:21px;
+  }
+  .policy_description2{
+    margin-top:0em;
+    text-align: left;
+    font-size:21px;
+  }
+  .policy_description3{
+    margin-top:0em;
+    text-align: left;
+    font-size:21px;
+  }
+  .policy_description4{
+    margin-top:0em;
+    text-align: left;
+    font-size:21px;
+  }
+  .policy_description5{
+    margin-top:0em;
+    text-align: left;
+    font-size:21px;
+  }
+  .policy_description6{
+    margin-top:0em;
+    text-align: left;
+    font-size:21px;
+  }
+  .policy_description7{
+    margin-top:0em;
+    text-align: left;
+    font-size:21px;
+  }
+  .policy_description8{
+    margin-top:0em;
+    text-align: left;
+    font-size:21px;
+  }
+  .policy_description9{
+    margin-top:1em;
+    text-align: left;
+    font-size:21px;
+  }
+  .policy_description10{
+    margin-top:0em;
+    text-align: left;
+    font-size:21px;
+  }
+.policy_description11{
+    margin-top:0em;
+    text-align: left;
+    font-size:21px;
+    margin-left:1em;
+}
+.policy_description12{
+    margin-top:0em;
+    text-align: left;
+    font-size:21px;
+  }
+  .policy_description13{
+    margin-top:0em;
+    text-align: left;
+    font-size:21px;
+  }
+  .policy_description14{
+    margin-top:1em;
+    text-align: left;
+    font-size:21px;
+  }
+  .policy_description15{
+    margin-top:0em;
+    text-align: left;
+    font-size:21px;
+  }
+  .policy_description16{
+    margin-top:1em;
+    text-align: left;
+    font-size:21px;
+  }
+  .policy_description17{
+    margin-top:0em;
+    text-align: left;
+    font-size:21px;
+  }
+  .policy_description18{
+    margin-top:0em;
+    text-align: left;
+    font-size:21px;
+  }
+
+
+  /* cancellation policy */
+  .cancellation_policy{
+    height:90vh;
+  }
+  .cancellation_policy1{
+    margin-top:3em;
+    text-align: left;
+    font-size:21px;
+  }
+  .cancellation_policy2{
+    margin-top:1em;
+    text-align: left;
+    font-size:21px;
+  }
+  .cancellation_policy3, .cancellation_policy4, .cancellation_policy5, .cancellation_policy6, .cancellation_policy7{
+    margin-top:1em;
+    text-align: left;
+    font-size:21px;
+  }
+
+
+  /* refund policy */
+  .refund_policy{
+    height:80vh;
+  }
+  .refund_policy1{
+    margin-top:1em;
+    text-align: left;
+    font-size:21px;
+  }
+
+  @media (max-width: 100px) {
+    .login {
+        visibility: hidden !important;
+    }
 }

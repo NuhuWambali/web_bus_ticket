@@ -20,6 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/css/animate.min.css" ></link>
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <title>BusTicket - Customer Feedback</title>
     
 </head>
@@ -58,10 +59,89 @@
 .feedback1{
   z-index:100000;
 }
+.customer_feedback{
+  height:55vh;
+}
+
+
+.card {
+            width: 50%;
+            height: 50vh;
+            margin: auto;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+        }
+
+        .card h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .emoji-container {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .emoji-container label {
+            font-size: 2rem;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .emoji-container input[type="radio"] {
+            display: none;
+        }
+
+        .emoji-container input[type="radio"]:checked + label {
+            transform: scale(1.2);
+            color: #007bff;
+        }
+
+        .emoji-container label::after {
+            content: attr(data-label);
+            display: block;
+            font-size: 0.75rem;
+            text-align: center;
+            margin-top: 5px;
+            color: #333;
+        }
+
+        .comment-field {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+            resize: none;
+            box-sizing: border-box;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .submit-btn:hover {
+            background-color: #3b3b3a;
+        }
 </style>
 <body>
     <section class="landing">
-        <div class="about_background_image">
+        <div class="about_background_image customer_feedback_bg_image">
         <!-- navbar -->
         <div class="nav">
           <nav class="navbar navbar-expand-lg  wow fadeInUp">
@@ -75,27 +155,26 @@
                    <li class="nav-item home">
                      <a class="nav-link " aria-current="page" href="./index.html">Home</a>
                    </li>
-                   <li class="nav-item about">
-                     <a class="nav-link active" href="./about.html">About Us</a>
-                   </li>
                    <li class="nav-item download">
-                     <a class="nav-link" href="./download_ticket.html">Download Ticket</a>
+                    <a class="nav-link" href="./download_ticket.html">Download Ticket</a>
+                  </li>
+                   <li class="nav-item about">
+                     <a class="nav-link" href="./about.html">About Us</a>
                    </li>
+                  
                    <li class="nav-item contact">
                      <a class="nav-link " href="./contact.html">Contact Us</a>
                    </li>
                    <li class="nav-item feedback">
-                     <a class="nav-link " href="./contact.html">Customer Feedback</a>
+                     <a class="nav-link active" href="./contact.html">Customer Feedback</a>
                    </li>
                    <li class="nav-item dropdown feedback1" >
-                     <a class="nav-link" onclick="toggleDropdown()" id="languageDropdown" >
-                       <i class="fa fa-language" style="font-size:23px"></i>
-                     </a>
-                     <div class="dropdown-menu" id="dropdownMenu">
-                       <a class="dropdown-item" href="#" onclick="changeLanguage('en')">English</a>
-                       <a class="dropdown-item" href="#" onclick="changeLanguage('sw')">Swahili</a>
-                     </div>
-                   </li>
+                    <div class="language-switcher pl-4" onclick="toggleLanguage()" id="languageSwitcher">
+                      <a href="#" id="languageLink" class="language-toggle">
+                        <i class="fa fa-globe mt-2" style="font-size: 23px;color:#000"></i> <span id="currentLanguage" class="text-dark mt-2">ENG</span>
+                      </a>
+                    </div> 
+                  </li>
                  </ul>     
                </div> 
                
@@ -109,13 +188,39 @@
        </nav>
           </div>
          <div class="about_heading">
-            <h1 class="about_heading">Customer Feedback</h1>
+            <h1 class="about_heading customer_feedback_header">Customer Feedback</h1>
         </div>
     </section>
-    <section class="about_description">
-      
+
+
+    <section class="customer_feedback customer_feedback_small_screen">
+      <div class="card mt-5  card_small_screen">
+        <h3 style="font-weight: 600;">Customer Feedback</h3>
+        <form id="feedbackForm"  action="javascript:void(0);"  method="POST">
+            <p>What do you think of our service?</p>
+            <div class="emoji-container">
+              <input type="radio" id="emoji1" name="rating" value="Very Dissatisfied">
+              <label for="emoji1" data-label="Very Dissatisfied">&#128577;</label> 
+              
+              <input type="radio" id="emoji2" name="rating" value="Dissatisfied">
+              <label for="emoji2" data-label="Dissatisfied">&#128578;</label>
+              
+              <input type="radio" id="emoji3" name="rating" value="Neutral">
+              <label for="emoji3" data-label="Neutral">&#128528;</label> 
+              
+              <input type="radio" id="emoji4" name="rating" value="Satisfied">
+              <label for="emoji4" data-label="Satisfied">&#128522;</label> 
+              
+              <input type="radio" id="emoji5" name="rating" value="Very Satisfied">
+              <label for="emoji5" data-label="Very Satisfied">&#128515;</label> 
+          </div>
+          <label for="comment">Give Us Your Comments</label> 
+          <textarea id="comment" class="comment-field" name="comment" placeholder="Any comments?" rows="4"></textarea>
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
     </section>
-    
+
     <section class="footer">
       <div class="row">
            <div class="col-3 footerdescription">
@@ -142,21 +247,19 @@
            </div>
            <div class="col-3">
                  <div class="links ">
-                     <h3 class="linksHeading">Important Links</h3>
-                        <div class="all_links">
-
-                      
+                     <h3 class="linksHeading customer_feedback_linksHeading">Important Links</h3>
+                        <div class="all_links customer_feedback_links">
                          <div class="link1 wow fadeInLeft">
                            <p>></p>
                            <a href="./terms_and_condition.html" class="about">Terms and Conditions</a>
                          </div>
                          <div class="link2 wow fadeInLeft">
                            <p>></p>
-                           <a href="" class="service">Service</a>
+                           <a href="./privacy_policy.html" class="service">Privacy policy</a>
                          </div>
                          <div class="link3 wow fadeInLeft">
                            <p>></p>
-                           <a href="" class="projects">Projects</a>
+                           <a href="./cancellation_policy.html" class="projects">Cancellation Policy</a>
                          </div>
                          <div class="link4 wow fadeInLeft">
                            <p>></p>
@@ -174,14 +277,14 @@
                     <h3 class="contactHeading">Contact Info</h3>
                     <div class="address">
                      <i class="fa fa-map-marker"style="font-size:24px;"></i>
-                     <div class="address1">
+                     <div class="address1 customer_feedback_address1">
                        <p>Jl. Raya Kuta No.21, Kuta, Bali<br>80361</p>
                        <p></p>
                      </div>
                    </div>
                    <div class="phone">
                      <img class="fa fa-phone1"  src="./assets/images/phone.png" height="25px" width="25px"></img>
-                     <div class="phone1">
+                     <div class="phone1 customer_feedback_phone1">
                        <p>(+62)81587 6218</p>  
                      </div>
                    </div>
@@ -199,41 +302,61 @@
    
     </section>
 
-       
 
-   <script>
-    function toggleDropdown() {
-      const dropdownMenu = document.getElementById('dropdownMenu');
-      dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
-    }
-    
-    function openDropdown() {
-      const dropdownMenu = document.getElementById('dropdownMenu');
-      dropdownMenu.style.display = 'block';
-    }
-    
-    function changeLanguage(language) {
-      if (language === 'en') {
-        alert('Language changed to English');
-     
-      } else if (language === 'sw') {
-        alert('Language changed to Swahili');
-   
-      }
-    }
+<script>
+      function toggleLanguage() {
+       var currentLanguage = document.getElementById("currentLanguage");
+       var languageLink = document.getElementById("languageLink");
+  
+       if (currentLanguage.innerText === "ENG") {
+         currentLanguage.innerText = 'SW';
+         alert("Language switched to Swahili");
+         // languageLink.href = '/index.html'; 
+        
+       } else {
+         currentLanguage.innerText = 'ENG';
+         alert("Language switched to English");
+         // languageLink.href = '/index.html'; 
+        
+       }
+  
+       console.log("Switched to " + currentLanguage.innerText);
+     }
 
-    window.onclick = function(event) {
-      if (!event.target.matches('#languageDropdown') && !event.target.matches('#languageDropdown *')) {
-        const dropdownMenus = document.getElementsByClassName('dropdown-menu');
-        for (let i = 0; i < dropdownMenus.length; i++) {
-          const openDropdown = dropdownMenus[i];
-          if (openDropdown.style.display === 'block') {
-            openDropdown.style.display = 'none';
-          }
-        }
-      }
-    }
 </script>
+
+<!-- form submition -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const feedbackForm = document.getElementById('feedbackForm');
+        
+        if (feedbackForm) {
+            feedbackForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+                
+                // Handle form submission logic here
+                const selectedRating = document.querySelector('input[name="rating"]:checked');
+                
+                if (!selectedRating) {
+                    alert('Please select a rating');
+                    return;
+                }
+                
+                const rating = selectedRating.value;
+                const comment = document.querySelector('.comment-field').value;
+                
+                console.log('Rating:', rating);
+                console.log('Comment:', comment);
+                
+                // Optional: Perform additional actions like AJAX submission
+            });
+        } else {
+            console.error('Form element not found.');
+        }
+    });
+</script>
+
 <script src="./assets/js/bootstrap.js"></script>
 <script src="./assets/js/main.js"></script>
  
